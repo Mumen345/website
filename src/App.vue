@@ -9,16 +9,13 @@
                 </router-link>
                 <div class="links">
                     <router-link 
-                        to="/#">About Us</router-link> |
+                        to="/#">About Us</router-link> 
                     <router-link 
                         to="/#">Contact us</router-link>
-                    |
                     <router-link to="/#">FAQ
                     </router-link>
-                    |
                     <router-link to="/#">Greach Private
                     </router-link>
-                    |
                     <router-link to="/#">Greach Public
                     </router-link>
                 </div>

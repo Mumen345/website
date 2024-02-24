@@ -110,4 +110,11 @@ export default {
     width: 100%;
 
 }
+.button_div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
 </style>
