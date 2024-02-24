@@ -161,6 +161,8 @@ h5 {
         width: 100%;
     }
     .hello {
+      background-image: none;
+      background: #F5F5F5;
         padding: 20px;
         height: auto;
         margin-top: 60px;
