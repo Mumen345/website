@@ -109,6 +109,7 @@ h5 {
   .hello {
     padding: 30px 60px;
     height: auto;
+  margin-top: 60px;
   }
 }
 @media only screen and (max-width: 1107px) {
@@ -118,8 +119,8 @@ h5 {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 50px;
+    text-align: center !important;
+    gap: 60px;
   }
   .left_container {
     width: 100%;
@@ -127,12 +128,16 @@ h5 {
     align-items: center;
     justify-content: center;
   }
-
+  h1 {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 769px) {
   .right_container img {
     width: 100%;
   }
+ 
+ 
 }
 
 </style>
