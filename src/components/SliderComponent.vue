@@ -19,11 +19,11 @@ export default {
 .second_section {
     background: #CCFE69;
     height: 80px;
-  padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 20px;
 
 }
 
