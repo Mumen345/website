@@ -1,23 +1,7 @@
 <template>
-<div class="">
-    <div class="private_container">
-        <p class="block_header">Lorem Ipsum Header</p>
-        <h1>Lorem Ipsum header template</h1>
-    </div>
-    <div class="writeup_container">
-        <div class="left_div">
-            <img src="../assets/images/private_mockup.svg" alt="">
-            <div class="button_div">
-                <a href="#">
-                    <img src="../assets/images/App_Store.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="../assets/images/play.svg" alt="">
-                </a>
-            </div>
-        </div>
+      <div class="writeup_container">
         <div class="right_div">
-            <h1>Greach Private</h1>
+            <h1>Greach Public</h1>
             <p class="sub_header">Stay informed with our blog section dedicated to future technology.</p>
             <div class="small_div_container">
                 <div class="small_div">
@@ -39,23 +23,32 @@
 
             </div>
         </div>
+        <div class="left_div">
+            <img src="../assets/images/private_mockup.svg" alt="">
+            <div class="button_div">
+                <a href="#">
+                    <img src="../assets/images/App_Store.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../assets/images/play.svg" alt="">
+                </a>
+            </div>
+        </div>
     </div>
-</div>
 </template>
-
 <script>
 export default {
-
+    
 }
 </script>
-
-<style lang="scss" scoped>
-.writeup_container {
+<style scoped lang="scss">
+    .writeup_container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 80px;
+    background-color: #f5f5f5;
 }
 
 .right_div {

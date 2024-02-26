@@ -126,6 +126,7 @@ h5 {
         background-size: cover;
         padding: 10px 5px;
     }
+    
 }
 
 @media only screen and (max-width: 1107px) {
