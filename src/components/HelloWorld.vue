@@ -1,25 +1,25 @@
 <template>
 <div class="hello">
     <div class="left_container">
-        <h1 class="header">A Smarter and Sustainable
+        <h1 class="header">Smart and Sustainable
             <span class="box_text">
                 Commute Solution
             </span>
-            for Your Organization</h1>
+            for your organization</h1>
         <h5>
-            Join Africa’s
-            <span class="bold">fastest</span>
-            growing network of
-            <span class="bold">verified car owners</span>
-            offering seats to verified riders
-            <span class="bold">commuting same direction</span>
+            Easily create a
+            <span class="bold">carpooling network</span>
+
+            for members of your
+
+            <span class="bold">company or group.</span>
         </h5>
         <div class="button_div">
-            <a href="#">
-                <img src="../assets/images/App_Store.svg" alt="">
+            <a class="button" href="#">
+                Book a Demo
             </a>
-            <a href="#">
-                <img src="../assets/images/play.svg" alt="">
+            <a class="button_sec" href="#">
+                Get Started
             </a>
         </div>
     </div>
@@ -42,6 +42,24 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style lang="scss" scoped>
+.button_sec {
+    border: none;
+    padding: 20px 70px;
+    border-radius: 10px;
+    border: 1px solid #2aaa0b;
+    color: #2aaa0b !important;
+    background-color: #F2FAF1;
+}
+
+.button {
+    border: none;
+    padding: 20px 70px;
+    background-color: #2aaa0b;
+    border-radius: 10px;
+    color: #ffffff !important;
+
+}
+
 .hello {
     background-image: url("../assets/images/hero_bg.svg");
     height: 720px;
@@ -77,6 +95,7 @@ h1 {
 
 h5 {
     line-height: 190%;
+    width: 550px;
 }
 
 .bold {
@@ -126,7 +145,7 @@ h5 {
         background-size: cover;
         padding: 10px 5px;
     }
-    
+
 }
 
 @media only screen and (max-width: 1107px) {
@@ -161,9 +180,10 @@ h5 {
         font-size: 40px;
         width: 100%;
     }
+
     .hello {
-      background-image: none;
-      background: #F5F5F5;
+        background-image: none;
+        background: #F5F5F5;
         padding: 20px;
         height: auto;
         margin-top: 60px;

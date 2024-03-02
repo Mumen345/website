@@ -21,20 +21,20 @@
             <p class="sub_header">Stay informed with our blog section dedicated to future technology.</p>
             <div class="small_div_container">
                 <div class="small_div">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    <h4>Private Network</h4>
+                    <p>(create a private network for your group or company)</p>
                 </div>
                 <div class="small_div">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    <h4>Subscription</h4>
+                    <p>Select Gold, Silver or Bronze subscription package and pay by card or through wallets</p>
                 </div>
                 <div class="small_div">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    <h4>Admit </h4>
+                    <p>Send the network’s unique code to your members and admit them</p>  
                 </div>
                 <div class="small_div">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    <h4>Dashboard</h4>
+                    <p>Track carpooling activities such as top carpoolers, total KM covered and total CO2 saved</p>
                 </div>
 
             </div>

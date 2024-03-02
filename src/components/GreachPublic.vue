@@ -5,20 +5,20 @@
             <p class="sub_header">Stay informed with our blog section dedicated to future technology.</p>
             <div class="small_div_container">
                 <div class="small_div">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    <h4>Download App </h4>
+                    <p>Download Greach App on play store or App Store</p>
                 </div>
                 <div class="small_div">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    <h4>⁠Complete ID Verification</h4>
+                    <p>Fill your government ID as a passenger or government ID and Car details as a car owner- to join the public network.</p>
                 </div>
                 <div class="small_div">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    <h4>Join Network </h4>
+                    <p>Receive code and join existing private network</p>  
                 </div>
                 <div class="small_div">
-                    <h4>Lorem Ipsum</h4>
-                    <p>Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    <h4>Enjoy Ride</h4>
+                    <p>Put in trip details, get estimate and get matched to car owner/rider</p>
                 </div>
 
             </div>
