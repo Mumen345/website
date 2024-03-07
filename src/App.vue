@@ -14,7 +14,7 @@
                 </router-link>
                 <router-link to="/#">Greach Public
                 </router-link>
-                <router-link to="/#">Contact us</router-link>
+                <router-link to="/contact">Contact us</router-link>
             </div>
             <a href="#" target="_blank" class="black_button elongate_btn">Book a Demo</a>
         </div>
@@ -30,7 +30,7 @@
                 </router-link>
                 <router-link to="/#">Greach Public
                 </router-link>
-                <router-link to="/#">Contact us</router-link>
+                <router-link to="/contact">Contact us</router-link>
 
                 <a href="#" class="black_button">Book a Demo</a>
 

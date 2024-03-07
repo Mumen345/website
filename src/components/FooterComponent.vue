@@ -89,7 +89,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 30px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     width: 100%;
     box-sizing: border-box;
 }
