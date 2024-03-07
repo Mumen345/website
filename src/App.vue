@@ -8,11 +8,11 @@
 
             </router-link>
             <div class="links">
-                <router-link to="/#">FAQ
+                <router-link to="/faq">FAQ
                 </router-link>
-                <router-link to="/#">Greach Private
+                <router-link to="/private">Greach Private
                 </router-link>
-                <router-link to="/#">Greach Public
+                <router-link to="/public">Greach Public
                 </router-link>
                 <router-link to="/contact">Contact us</router-link>
             </div>
@@ -24,11 +24,11 @@
 
             </router-link>
             <div id="myLinks">
-                <router-link to="/#">FAQ
+                <router-link to="/faq">FAQ
                 </router-link>
-                <router-link to="/#">Greach Private
+                <router-link to="/Private">Greach Private
                 </router-link>
-                <router-link to="/#">Greach Public
+                <router-link to="/public">Greach Public
                 </router-link>
                 <router-link to="/contact">Contact us</router-link>
 
