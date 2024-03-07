@@ -125,4 +125,21 @@ h5 {
     background: #ffffff;
     border-radius: 6px;
 }
+@media only screen and (max-width: 1107px) {
+    .contact_container {
+    background: #f5f5f5;
+    margin-top: 50px;
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 30px;
+}
+.action_div {
+  
+}
+} 
 </style>

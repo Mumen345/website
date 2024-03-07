@@ -3,7 +3,6 @@
     <h1>Get in Touch with Greach</h1>
     <div class="form_container">
         <form>
-            <!-- 2 column grid layout with text inputs for the first and last names -->
             <div class=" mb-4 custom">
                 <div class="col">
                     <div data-mdb-input-init class="input_div">
@@ -18,17 +17,15 @@
                     </div>
                 </div>
             </div>
-            <!-- Email input -->
             <div data-mdb-input-init class="input_div mb-4">
                 <label class="form-label" for="form3Example3">Phone Number</label>
                 <input type="tel" id="phonenumber" class="" />
             </div>
 
             <div data-mdb-input-init class="input_div mb-4">
-                <label class="form-label" for="form4Example3" >Message</label>
+                <label class="form-label" for="form4Example3">Message</label>
                 <textarea class="" id="form4Example3" rows="4"></textarea>
             </div>
-            <!-- Submit button -->
             <button class="button mb-4">Sign up</button>
         </form>
     </div>
@@ -49,7 +46,7 @@ export default {
 }
 
 .custom {
-    display:flex !important;
+    display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
     gap: 30px;
@@ -65,23 +62,27 @@ h1 {
     width: 50%;
     margin: 50px auto;
 }
+
 input {
     border: 1px solid #EAECEF !important;
     padding: 10px 0;
     background: #F5F5F5;
     border-radius: 4px;
 }
+
 textarea {
     border: 1px solid #EAECEF !important;
     outline: #EAECEF !important;
     background: #F5F5F5;
     border-radius: 4px;
 }
+
 .input_div {
-    display:flex;
+    display: flex;
     flex-direction: column;
     outline: #EAECEF !important;
 }
+
 .button {
     border: none;
     padding: 15px 70px;
@@ -91,14 +92,16 @@ textarea {
     width: 100%;
 
 }
+
 @media only screen and (max-width: 1107px) {
     .form_container {
-    width: 90%;
-    margin: 50px auto;
-}
-.custom {
-    display:flex !important;
-    flex-direction: column;
-}
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .custom {
+        display: flex !important;
+        flex-direction: column;
+    }
 }
 </style>
