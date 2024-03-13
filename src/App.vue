@@ -3,23 +3,23 @@
     <div class="navBar">
         <div class="nav_container">
 
-            <router-link to="#">
+            <router-link to="/">
                 <img src="./assets/images/logo_mobile.svg" alt="">
 
             </router-link>
             <div class="links">
-                <router-link to="/faq">FAQ
+                <router-link to="/public">Greach Public
                 </router-link>
                 <router-link to="/private">Greach Private
                 </router-link>
-                <router-link to="/public">Greach Public
+                <router-link to="/faq">FAQ
                 </router-link>
                 <router-link to="/contact">Contact us</router-link>
             </div>
             <a href="#" target="_blank" class="black_button elongate_btn">Book a Demo</a>
         </div>
         <div class="topnav">
-            <router-link to="#">
+            <router-link to="/">
                 <img src="./assets/images/logo_mobile.svg" alt="">
 
             </router-link>

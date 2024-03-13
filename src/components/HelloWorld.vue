@@ -15,17 +15,52 @@
             <span class="bold">company or group.</span>
         </h5>
         <div class="button_div">
-            <a class="button" href="#">
-                Book a Demo
-            </a>
-            <a class="button_sec" href="#">
-                Get Started
-            </a>
-        </div>
+                <a href="#">
+                    <img src="../assets/images/App_Store.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="../assets/images/play.svg" alt="">
+                </a>
+            </div>
+        <a class="button1" @click.prevent="on" id="myBtn" href="#">
+            Book a Demo
+        </a>
     </div>
     <div class="right_container">
         <img src="../assets/images/mockup.svg" alt="">
         <img src="../assets/images/bottom.svg" alt="">
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Modal Header</h4>
+                <span @click.prevent="off" class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="form_container">
+                    <form @submit.prevent="submit">
+
+                        <div class=" mt-3 mb-4 custom">
+                            <div class="col">
+                                <div data-mdb-input-init class="input_div">
+                                    <input v-model="request.fullName" type="text" id="form3Example1" placeholder="FullName" class="" />
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col">
+                                <div data-mdb-input-init class="input_div">
+                                    <input v-model="request.email" type="email" id="form3Example3" placeholder="Your email address" class="" />
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="button mb-4">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 </template>
@@ -33,15 +68,151 @@
 <script>
 export default {
     name: 'HelloWorld',
-    props: {
-        msg: String
-    }
+    data() {
+        return {
+            request: {
+                fullName: "",
+                message: "",
+                email: "",
+
+            }
+        }
+    },
+    methods: {
+        on() {
+            document.getElementById("myModal").style.display = "block";
+        },
+
+        off() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    },
+
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-
 <style lang="scss" scoped>
+//Modal Styles
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000;
+    background-color: #000000b6;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+input {
+    border: 1px solid #EAECEF !important;
+    padding: 10px;
+    background: #F5F5F5;
+    border-radius: 4px;
+}
+
+textarea {
+    border: 1px solid #EAECEF !important;
+    outline: #EAECEF !important;
+    background: #F5F5F5;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.input_div {
+    display: flex;
+    flex-direction: column;
+    outline: #EAECEF !important;
+}
+
+.button1 {
+    border: none;
+    padding: 15px 70px;
+    background-color: #2aaa0b;
+    border-radius: 10px;
+    color: #ffffff !important;
+    width: 60%;
+    text-align: center;
+
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2aaa0b;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #2aaa0b;
+    color: white;
+}
+
 .button_sec {
     border: none;
     padding: 20px 70px;
@@ -149,6 +320,9 @@ h5 {
 }
 
 @media only screen and (max-width: 1107px) {
+    .modal-content {
+    width: 90%;
+}
     .hello {
         flex-direction: column !important;
         justify-content: center;
@@ -170,6 +344,7 @@ h5 {
 }
 
 @media only screen and (max-width: 769px) {
+
     .right_container img {
         width: 100%;
     }

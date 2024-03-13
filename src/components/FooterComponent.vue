@@ -49,7 +49,8 @@
     </div>
     <hr class="line" />
     <div class="last_section">
-        <img alt="apple logo" class="textc" src="../assets/images/one.svg" />
+        <h6 class="text-white">Greach 2024</h6>
+        <!-- <img alt="apple logo" class="textc" src="../assets/images/one.svg" /> -->
     </div>
 </footer>
 </template>
