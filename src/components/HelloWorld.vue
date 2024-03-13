@@ -343,11 +343,11 @@ h5 {
 }
 
 @media only screen and (max-width: 769px) {
-
+    
     .right_container img {
         width: 100%;
     }
-
+    
     h1 {
         font-family: ClashDisplay;
         line-height: 45px;
@@ -356,7 +356,7 @@ h5 {
         text-align: center;
         width: 100%;
     }
-
+    
     .hello {
         background-image: none;
         background: #F5F5F5;
@@ -373,14 +373,14 @@ h5 {
         color: #ffffff !important;
         width: 88%;
         text-align: center;
-
+        
     }
-
+    
     h5 {
         width: 100%;
         text-align: center;
     }
-
+    
     .download_btn img {
         width: 50%;
     }
@@ -390,5 +390,17 @@ h5 {
         border-radius: 6px;
     }
     
+}
+@media only screen and (max-width: 450px) {
+    .button1 {
+        border: none;
+        padding: 15px 120px;
+        background-color: #2aaa0b;
+        border-radius: 6px;
+        color: #ffffff !important;
+        width: 100%;
+        text-align: center;
+        
+    }
 }
 </style>
