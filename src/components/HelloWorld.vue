@@ -15,13 +15,13 @@
             <span class="bold">company or group.</span>
         </h5>
         <div class="button_div">
-                <a href="#">
-                    <img src="../assets/images/App_Store.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="../assets/images/play.svg" alt="">
-                </a>
-            </div>
+            <a class="download_btn" href="#">
+                <img src="../assets/images/App_Store.svg" alt="">
+            </a>
+            <a class="download_btn" href="#">
+                <img src="../assets/images/play.svg" alt="">
+            </a>
+        </div>
         <a class="button1" @click.prevent="on" id="myBtn" href="#">
             Book a Demo
         </a>
@@ -72,7 +72,6 @@ export default {
         return {
             request: {
                 fullName: "",
-                message: "",
                 email: "",
 
             }
@@ -155,7 +154,6 @@ textarea {
     text-align: center;
 
 }
-
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -283,7 +281,7 @@ h5 {
 .button_div {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -321,8 +319,9 @@ h5 {
 
 @media only screen and (max-width: 1107px) {
     .modal-content {
-    width: 90%;
-}
+        width: 90%;
+    }
+
     .hello {
         flex-direction: column !important;
         justify-content: center;
@@ -351,8 +350,10 @@ h5 {
 
     h1 {
         font-family: ClashDisplay;
-        line-height: 50px;
-        font-size: 40px;
+        line-height: 45px;
+        font-size: 30px;
+        width: 100% !important;
+        text-align: center;
         width: 100%;
     }
 
@@ -363,5 +364,31 @@ h5 {
         height: auto;
         margin-top: 60px;
     }
+
+    .button1 {
+        border: none;
+        padding: 15px 120px;
+        background-color: #2aaa0b;
+        border-radius: 6px;
+        color: #ffffff !important;
+        width: 88%;
+        text-align: center;
+
+    }
+
+    h5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .download_btn img {
+        width: 50%;
+    }
+    .download_btn {
+        width: 100% !important;
+        background: #000000;
+        border-radius: 6px;
+    }
+    
 }
 </style>
