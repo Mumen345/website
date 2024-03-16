@@ -45,14 +45,19 @@
                         <div class=" mt-3 mb-4 custom">
                             <div class="col">
                                 <div data-mdb-input-init class="input_div">
-                                    <input v-model="request.fullName" type="text" id="form3Example1" placeholder="FullName" class="" />
+                                    <input v-model="request.fullName" type="text" id="name" placeholder="FullName" class="" />
                                 </div>
                             </div>
                             <br>
                             <div class="col">
                                 <div data-mdb-input-init class="input_div">
-                                    <input v-model="request.email" type="email" id="form3Example3" placeholder="Your email address" class="" />
+                                    <input v-model="request.email" type="email" id="email" placeholder="Your email address" class="" />
                                 </div>
+                            </div>
+                            <br>
+                            <div data-mdb-input-init class="input_div mb-4">
+                                <label class="form-label" for="form4Example3">Message</label>
+                                <textarea v-model="request.message" class="" id="form4Example3" rows="4"></textarea>
                             </div>
                         </div>
                         <button type="submit" class="button mb-4">Send Message</button>
@@ -73,7 +78,7 @@ export default {
             request: {
                 fullName: "",
                 email: "",
-
+                message: "I need to inquire about how [Your Product/Service Name] can elevate my [industry/business]. Ready to witness firsthand the possibilities? Let's set up a personalized demo session to explore the tailored solutions we offer for your specific needs.",
             }
         }
     },
@@ -104,8 +109,7 @@ export default {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #000000;
-    background-color: #000000b6;
+    background-color: #000000d2;
 }
 
 /* Modal Content */
@@ -182,23 +186,27 @@ textarea {
 
 /* The Close Button */
 .close {
-    color: white;
+    color: rgb(0, 0, 0);
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #484848;
     text-decoration: none;
     cursor: pointer;
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: #2aaa0b;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100&;
+    background-color: #f5f5f5;
+    color: rgb(0, 0, 0);
 }
 
 .modal-body {
@@ -222,9 +230,10 @@ textarea {
 
 .button {
     border: none;
-    padding: 20px 70px;
-    background-color: #2aaa0b;
+    padding: 12px;
+    background-color: #000000;
     border-radius: 10px;
+    width: 100%;
     color: #ffffff !important;
 
 }
@@ -343,11 +352,11 @@ h5 {
 }
 
 @media only screen and (max-width: 769px) {
-    
+
     .right_container img {
         width: 100%;
     }
-    
+
     h1 {
         font-family: ClashDisplay;
         line-height: 45px;
@@ -356,7 +365,7 @@ h5 {
         text-align: center;
         width: 100%;
     }
-    
+
     .hello {
         background-image: none;
         background: #F5F5F5;
@@ -373,24 +382,26 @@ h5 {
         color: #ffffff !important;
         width: 88%;
         text-align: center;
-        
+
     }
-    
+
     h5 {
         width: 100%;
         text-align: center;
     }
-    
+
     .download_btn img {
         width: 50%;
     }
+
     .download_btn {
         width: 100% !important;
         background: #000000;
         border-radius: 6px;
     }
-    
+
 }
+
 @media only screen and (max-width: 450px) {
     .button1 {
         border: none;
@@ -398,9 +409,9 @@ h5 {
         background-color: #2aaa0b;
         border-radius: 6px;
         color: #ffffff !important;
-        width: 100%;
+        width: 1000%;
         text-align: center;
-        
+
     }
 }
 </style>

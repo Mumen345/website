@@ -68,7 +68,7 @@ export default {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     border-radius: 10px;
 }
@@ -147,7 +147,7 @@ h1 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: start;
         border-radius: 10px;
         box-sizing: border-box;

@@ -1,48 +1,50 @@
 <template>
-      <div class="writeup_container">
-        <div class="right_div">
-            <h1>Greach Public</h1>
-            <p class="sub_header">Stay informed with our blog section dedicated to future technology.</p>
-            <div class="small_div_container">
-                <div class="small_div">
-                    <h4>Download App </h4>
-                    <p>Download Greach App on play store or App Store</p>
-                </div>
-                <div class="small_div">
-                    <h4>⁠Complete ID Verification</h4>
-                    <p>Fill your government ID as a passenger or government ID and Car details as a car owner- to join the public network.</p>
-                </div>
-                <div class="small_div">
-                    <h4>Join Network </h4>
-                    <p>Receive code and join existing private network</p>  
-                </div>
-                <div class="small_div">
-                    <h4>Enjoy Ride</h4>
-                    <p>Put in trip details, get estimate and get matched to car owner/rider</p>
-                </div>
+<div class="writeup_container">
+    <div class="right_div">
+        <h1>Greach Public</h1>
+        <p class="sub_header">Stay informed with our blog section dedicated to future technology.</p>
+        <div class="small_div_container">
+            <div class="small_div">
+                <h4>Download App </h4>
+                <p>Download Greach App on play store or App Store</p>
+            </div>
+            <div class="small_div">
+                <h4>⁠Complete ID Verification</h4>
+                <p>Fill your government ID as a passenger or government ID and Car details as a car owner- to join the public network.</p>
+            </div>
+            <div class="small_div">
+                <h4>Join Network </h4>
+                <p>Receive code and join existing private network</p>
+            </div>
+            <div class="small_div">
+                <h4>Enjoy Ride</h4>
+                <p>Put in trip details, get estimate and get matched to car owner/rider</p>
+            </div>
 
-            </div>
-        </div>
-        <div class="left_div">
-            <img src="../assets/images/private_mockup.svg" alt="">
-            <div class="button_div">
-                <a href="#">
-                    <img src="../assets/images/App_Store.svg" alt="">
-                </a>
-                <a href="#">
-                    <img src="../assets/images/play.svg" alt="">
-                </a>
-            </div>
         </div>
     </div>
+    <div class="left_div">
+        <img src="../assets/images/private_mockup.svg" alt="">
+        <div class="button_div">
+            <a href="#">
+                <img src="../assets/images/App_Store.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="../assets/images/play.svg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
 </template>
+
 <script>
 export default {
-    
+
 }
 </script>
-<style scoped lang="scss">
-    .writeup_container {
+
+<style lang="scss" scoped>
+.writeup_container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -61,7 +63,7 @@ export default {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: start;
     border-radius: 10px;
 }
@@ -140,7 +142,7 @@ h1 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: start;
         border-radius: 10px;
         box-sizing: border-box;
@@ -231,10 +233,11 @@ h1 {
     .sub_header {
         text-align: center;
     }
+
     .left_div {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
 }
 </style>

@@ -42,7 +42,7 @@
                     </p>
                 </div>
             </a>
-            <a href="tel:+1(123)456-7890">
+            <a href="">
                 <div class="action_div">
                     <p>Get Directions</p>
                 </div>
@@ -53,15 +53,18 @@
     <div class="column">
         <h5>Connect with Us</h5>
         <div class="sm_container">
-            <a class="sm_icon" href="http://">
-                <img src="../assets/images/contact_twitter.svg" alt="">
-            </a>
-            <a class="sm_icon" href="http://">
-                <img src="../assets/images/contact_medium.svg" alt="">
-            </a>
-            <a class="sm_icon" href="http://">
+            <a class="sm_icon" href="https://www.linkedin.com/company/greach-inc/">
                 <img src="../assets/images/contact_linkedin.svg" alt="">
             </a>
+            <a class="sm_icon" href="https://m.facebook.com/story.php?story_fbid=110835595016172&substory_index=0&id=100082691964533" target="_blank">
+                <img alt="apple logo" src="../assets/images/facebook_black.svg" />
+            </a>
+            <a class="sm_icon" href="https://twitter.com/GreachRides" target="_blank">
+                <img src="../assets/images/contact_twitter.svg" alt="">
+                </a>
+                <a class="sm_icon" href="https://www.instagram.com/greachrides/" target="_blank">
+                    <img alt="apple logo" src="../assets/images/instagram_black.svg" />
+                </a>
         </div>
     </div>
 </div>
