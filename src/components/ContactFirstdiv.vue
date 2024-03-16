@@ -42,7 +42,7 @@
                     </p>
                 </div>
             </a>
-            <a href="">
+            <a href="buttons">
                 <div class="action_div">
                     <p>Get Directions</p>
                 </div>
