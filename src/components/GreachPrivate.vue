@@ -8,10 +8,10 @@
         <div class="left_div">
             <img src="../assets/images/private_mockup.svg" alt="">
             <div class="button_div">
-                <a href="#">
+                <a href="https://apps.apple.com/app/greach/id6444231549">
                     <img src="../assets/images/App_Store.svg" alt="">
                 </a>
-                <a href="#">
+                <a href="https://play.google.com/store/apps/details?id=com.greach.greachapp">
                     <img src="../assets/images/play.svg" alt="">
                 </a>
             </div>
