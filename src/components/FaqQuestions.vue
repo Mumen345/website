@@ -1,6 +1,6 @@
 <template>
     <div class="entire_container">
-        <section class="container accordion accordion--radio">
+        <section class="accordion accordion--radio">
             <div class="tab" v-for="question in questions" :key="question.id">
                 <input type="radio" name="accordion-2" :id="question.identity">
                 <label :for="question.for" class="tab__label">{{ question.questions }}
@@ -166,10 +166,10 @@
     
     .entire_container {
         background-color: #ffffff;
-        padding-top: 50px;
+        padding-top: 70px;
         padding-bottom: 10px;
-        margin-top: 60px;
-        width: 80%;
+        width: 70%;
+        margin: 60px auto;
     }
     
     @keyframes bounce {
@@ -181,5 +181,14 @@
             transform: rotate(90deg) translate(-.25rem);
         }
     }
+@media screen and (max-width: 1020px) {
+    .entire_container {
+        background-color: #ffffff;
+        padding-top: 70px;
+        padding-bottom: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
     </style>
     
