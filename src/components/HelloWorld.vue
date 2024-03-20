@@ -15,10 +15,10 @@
             <span class="bold">company or group.</span>
         </h5>
         <div class="button_div">
-            <a class="download_btn" href="#">
+            <a class="download_btn" href="https://apps.apple.com/app/greach/id6444231549">
                 <img src="../assets/images/App_Store.svg" alt="">
             </a>
-            <a class="download_btn" href="#">
+            <a class="download_btn" href="https://play.google.com/store/apps/details?id=com.greach.greachapp">
                 <img src="../assets/images/play.svg" alt="">
             </a>
         </div>
