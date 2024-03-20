@@ -37,6 +37,8 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
+
 }
 
 .faq_container {
@@ -55,7 +57,6 @@ p {
         flex-direction: column;
         gap: 0;
         width: 100%;
-        text-align: center;
         padding-right: 1.5rem;
         padding-left: 1.5rem;
     }
