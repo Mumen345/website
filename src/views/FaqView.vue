@@ -3,7 +3,7 @@
     <div class="right_container">
         <h2>Frequently Asked Questions</h2>
         <p>If the question is not available on our FAQ section, Feel free to contact us personally, we will resolve your respective doubts. </p>
-        <router-link class="" to="/contact">Contact Us
+        <router-link class="faq_button" to="/contact">Contact Us
         </router-link>
     </div>
     <FaqQuestions />
@@ -32,12 +32,19 @@ p {
     line-height: 150%;
 }
 
+.faq_button {
+    background: #2AAA0B;
+    padding: 13px;
+    width: 50%;
+    text-align: center;
+    border-radius: 6px;
+}
+
 .right_container {
     width: 500px !important;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    text-align: center;
 
 }
 
@@ -49,6 +56,7 @@ p {
     width: 100%;
     padding-right: 3rem;
     padding-left: 3rem;
+
 }
 
 @media screen and (max-width: 1020px) {
@@ -64,6 +72,11 @@ p {
     .right_container {
         width: 100% !important;
         margin-top: 70px;
+    text-align: center;
     }
+    .faq_button {
+    width: 100%;
+    margin: 0 auto;
+}
 }
 </style>
