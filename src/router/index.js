@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NotFound from '../views/NotFound.vue'
 import FaqView from '../views/FaqView.vue'
+import PrivateView from '../views/PrivateView.vue'
 const routes = [
   {
     path: '/',
@@ -19,6 +20,12 @@ const routes = [
     path: "/faq",
     name: "FaqView",
     component: FaqView,
+  },
+  
+  {
+    path: '/private',
+    name: 'privatev',
+    component: PrivateView
   },
   {
     path: '/contact',
