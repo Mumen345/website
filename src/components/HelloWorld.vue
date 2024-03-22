@@ -409,7 +409,7 @@ h5 {
         background-color: #2aaa0b;
         border-radius: 6px;
         color: #ffffff !important;
-        width: 1000%;
+        width: 100%;
         text-align: center;
 
     }

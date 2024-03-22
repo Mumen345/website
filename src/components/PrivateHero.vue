@@ -1,7 +1,7 @@
 <template>
 <div class="private_container">
     <div class="private_left">
-        <h1>Lorem ipsum dolor sit amet Lorem ipsum </h1>
+        <h1>A Catchy Header for Greach Private here</h1>
         <p>Unlock your business's growth potential with a marketing agency's expertise.</p>
         <div class="button_div">
             <a class="download_btn" href="https://apps.apple.com/app/greach/id6444231549">
@@ -19,22 +19,24 @@
 <script>
 export default {
 
-    name:"PrivateHero"
+    name: "PrivateHero"
 }
 </script>
 
 <style lang="scss" scoped>
 .private_container {
     display: flex;
-    margin: 5rem auto;
+    margin: 5.5rem auto 2rem;
     justify-content: center;
 }
-h1{
+
+h1 {
     font-family: ClashDisplay;
     font-size: 3.5rem;
-    line-height: 92px;
+    line-height: 4.5rem;
 }
-.private_left{
+
+.private_left {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -43,12 +45,15 @@ h1{
     flex-wrap: wrap;
 
 }
-.private_left img{
+
+.private_left img {
     width: 100% !important;
 }
-p{
+
+p {
     line-height: 36px;
 }
+
 .button_div {
     display: flex;
     flex-wrap: wrap;
@@ -57,21 +62,46 @@ p{
     align-items: center;
 }
 
-
 @media screen and (max-width: 1177px) {
     .private_container {
-    display: flex;
-    flex-direction: column;
-    margin: 5rem auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 40px;
+        display: flex;
+        flex-direction: column;
+        margin: 5rem auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .private_left {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    img {
+        width: 100%;
+    }
+    h1 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+}
 }
 
-.private_left{
-width: 90%;
-justify-content: center;
-align-items: center;
-}}
+@media screen and (max-width: 500px) {
+    h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.download_btn img {
+        width: 50% !important;
+    }
+
+    .download_btn {
+        width: 100% !important;
+        background: #000000;
+        border-radius: 6px;
+    }
+}
 </style>

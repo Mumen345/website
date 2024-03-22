@@ -130,6 +130,7 @@ a {
     align-items: center;
     flex-shrink: 0;
     margin: 0 auto;
+    padding: 0 2rem;
 
 }
 
@@ -152,7 +153,13 @@ a {
     }
 
 }
-
+.black_button {
+    background:#2AAA0B;
+    text-align: center;
+    width: 10rem;
+    padding: 12px 0;
+    border-radius: 4px;
+}
 @media only screen and (max-width: 1000px) {
 
     .nav_container {
@@ -216,4 +223,5 @@ a {
         transition: height 4s;
     }
 }
+
 </style>
