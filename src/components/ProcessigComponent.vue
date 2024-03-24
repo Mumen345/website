@@ -204,5 +204,14 @@ export default {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: auto auto ;
+        
+    }
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: auto  ;
+
+    }
+
 }
 </style>
