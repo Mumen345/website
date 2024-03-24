@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import NotFound from '../views/NotFound.vue'
 import FaqView from '../views/FaqView.vue'
 import PrivateView from '../views/PrivateView.vue'
+import PublicView from '../views/PublicView.vue'
 const routes = [
   {
     path: '/',
@@ -24,8 +25,13 @@ const routes = [
   
   {
     path: '/private',
-    name: 'privatev',
+    name: 'private',
     component: PrivateView
+  },
+  {
+    path: '/public',
+    name: 'public',
+    component: PublicView
   },
   {
     path: '/contact',
