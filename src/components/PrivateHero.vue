@@ -27,7 +27,8 @@ export default {
 .private_container {
     display: flex;
     margin: 5.5rem auto 2rem;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h1 {

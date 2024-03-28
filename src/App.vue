@@ -14,9 +14,8 @@
                 </router-link>
                 <router-link to="/faq">FAQ
                 </router-link>
-                <router-link to="/contact">Contact us</router-link>
             </div>
-            <a href="#" target="_blank" class="black_button elongate_btn">Book a Demo</a>
+            <router-link class="black_button elongate_btn" to="/contact">Contact us</router-link>
         </div>
         <div class="topnav">
             <router-link to="/">
@@ -30,10 +29,7 @@
                 </router-link>
                 <router-link to="/public">Greach Public
                 </router-link>
-                <router-link to="/contact">Contact us</router-link>
-
-                <a href="#" class="black_button">Book a Demo</a>
-
+                <router-link class="black_button " to="/contact">Contact us</router-link>
             </div>
             <a target="_blank" class="icon" @click="myFunctiion">
                 <i class="fa fa-bars"></i>
