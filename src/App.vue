@@ -90,7 +90,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #111111;
-    max-width: 1440px;
+    max-width: 1640px;
     margin: 0 auto;
 }
 
@@ -112,7 +112,7 @@ a {
     top: 0;
     z-index: 200;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1640px;
     margin: 0 auto;
 
 }
