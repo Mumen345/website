@@ -152,8 +152,8 @@ textarea {
     border: none;
     padding: 15px 70px;
     background-color: #2aaa0b;
-    border-radius: 10px;
-    color: #ffffff !important;
+    border-radius: 4px;
+    color: #000000 !important;
     width: 60%;
     text-align: center;
 
@@ -378,7 +378,7 @@ h5 {
         border: none;
         padding: 15px 120px;
         background-color: #2aaa0b;
-        border-radius: 6px;
+        border-radius: 4px;
         color: #ffffff !important;
         width: 88%;
         text-align: center;
