@@ -6,13 +6,13 @@
                 <img alt="Hero Img" class="logo_img" src="../assets/images/greach_logo.png" />
             </div>
             <p class="company_description">
-                Greach is a secure peer-to-peer carpooling platform for working professionals in Africa.
+                Greach is a sustainability-driven carpooling platform for individuals and groups. 
             </p>
             <p class="company_description">
                 We have created a technology-driven platform to enable verified car owners fill their empty car seats with verified passengers going their direction.
             </p>
             <p class="company_description">
-                Car owners and Riders are able to reduce commuting cost and their carbon footprints.
+                Organisations are able to ease commuting challenges and reduce carbon footprints by creating a closed carpooling group for their members.
             </p>
 
             <!-- <div class="download_link">

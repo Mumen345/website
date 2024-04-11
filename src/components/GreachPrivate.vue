@@ -1,9 +1,5 @@
 <template>
 <div class="">
-    <div class="private_container">
-        <p class="block_header">Lorem Ipsum Header</p>
-        <h1>Lorem Ipsum header template</h1>
-    </div>
     <div class="writeup_container">
         <div class="left_div">
             <img src="../assets/images/private_mockup.svg" alt="">
