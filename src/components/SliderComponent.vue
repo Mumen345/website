@@ -1,9 +1,7 @@
 <template>
     <div class="second_section">
         <marquee direction="left" behavior="">
-            <p>We have created a technology-driven platform to enable verified car owners fill their empty car seats with verified passengers going their direction. <span class="move_right">
-</span></p>
-            
+            <p> We have created a technology-driven platform to enable verified car owners fill their empty car seats with verified passengers going their direction. </p>
         </marquee>
     </div>
 </template>

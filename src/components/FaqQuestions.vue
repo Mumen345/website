@@ -20,59 +20,46 @@
                 questions: [{
                         for: "rd1",
                         identity: "rd1",
-                        questions: "What makes BookTime great for managing visitors?",
-                        text: "BookTime simplifies visitor management with automated check-ins, easy appointment scheduling, and smooth communication.",
+                        questions: "Where can i download the GREACH app?",
+                        text: "Greach app is available on Google Playstore and Apple IOS. It is free to download and easy to use right away!",
                     },
                     {
                         for: "rd2",
                         identity: "rd2",
-                        questions: "Can I customize BookTime for my business needs?",
-                        text: "Absolutely! BookTime is flexible, letting you customize it to match your brand and how you operate.",
+                        questions: "How secure am I using this App?",
+                        text: "Safety of users is paramount to us at Greach. Your safety/security is highly guaranteed as both the drivers and riders/co-riders have been verified and screened. Additionally, during a trip, users (rider/driver) can activate the safety feature (emergency button) whenever there is a perceived threat. Our process flow is designed to protect both parties in the case of a false alarm.",
                     },
                     {
                         for: "rd3",
                         identity: "rd3",
-                        questions: "How does BookTime keep my data safe?",
-                        text: "Your data is secure with BookTime. We've got strong measures in place to keep everything safe.",
+                        questions: "I'm new to GREACH, what do I do?",
+                        text: "After downloading the app, users are expected to sign up by following the simple steps: Registration All users regardless of role/function (rider, driver, organizer) have a similar registration and verification process. Some users may require further verification depending on function. After signing up, the user is required to set up his/her profile and go through ID/Biometric verification.Users can register through below channels: Verification ID Verification: Matches Name and Phone Number."
                     },
                     {
                         for: "rd4",
                         identity: "rd4",
-                        questions: "How does the WhatsApp feature help staff communicate better?",
-                        text: "BookTime's WhatsApp feature lets staff chat with receptionists, making it easy to share availability and manage visitor wait times.",
+                        questions: "How do I search for a ride?",
+                        text: "Rider Requests Trip -> Driver Receives Match Request -> Driver Accepts/Rejects Request -> Match Confirmation Sent to Rider ->Driver Picks up Rider -> Trip Starts -> Driver Drops off Rider Trip requests are sent to the server to match riders to drivers. Once there is a match, the driver receives a “match request” with the rider (name, picture, network match) and trip (pickup/drop-off location, eta/detour time) information. Driver accepts/rejects the trip. If the driver accepts, the driver (car details, name, picture, network match) and trip (eta) information is sent to the rider. Trip is then started. Driver Availability Feature A driver can pick up multiple riders along the way. A driver can also indicate “no longer available for pickup” at any time even when there are still seats available. Greach will continue to match riders to a driver as long as the driver’s status is “available” and there are seats available.",
                     },
     
                     {
                         for: "rd6",
                         identity: "rd6",
-                        questions: "How do I set up automated appointments with BookTime?",
-                        text: "It's a breeze! BookTime's automated appointment setup is user-friendly, saving you time.",
+                        questions: "How secure is my data?",
+                        text: "Greach assures all users of total security of the data stored on their profiles during registration or update of their profile at any point. Our highly secured system infrastructure has also been optimized to ensure that no third-party infringement occurs on your data.",
                     },
                     {
                         for: "rd7",
                         identity: "rd7",
-                        questions: "Can staff easily update their availability?",
-                        text: "Definitely! Staff can tell the receptionist their availability through BookTime's WhatsApp, making updates quick.",
+                        questions: "How is a trip priced?",
+                        text: "Greach pricing uses a wallet system where users pre-fund their wallet from their bank/card. Riders are shown a billing estimate upon requesting a trip. This estimate is based on distance/time to get the rider to their destination. Our app is configured such that users have enough in their wallet to cover this bill estimate. The final bill will be different from the estimate. As the trip progresses the bill estimate is adjusted. As more riders join the trip, the bill for individual riders is reviewed. When the trip ends, the rider is sent a second (final) bill and payment is made automatically from the wallet.",
                     },
                     {
                         for: "rd8",
                         identity: "rd8",
-                        questions: "What kind of help does BookTime offer if I get stuck?",
-                        text: "BookTime's got your back! Reach out to our support team, or check out FAQs and guides for easy self-help.",
+                        questions: "How do I pay for my ride?",
+                        text: "Greach pricing uses a wallet system where users pre-fund their wallet from their bank/card. Riders are shown a billing estimate upon requesting a trip. This estimate is based on distance/time to get the rider to their destination. Our app is configured such that users have enough in their wallet to cover this bill estimate The final bill will be different from the estimate. As the trip progresses the bill estimate is adjusted. As more riders join the trip, the bill for individual riders is reviewed. When the trip ends, the rider is sent a second (final) bill and payment is made automatically from the wallet.",
                     },
-                    {
-                        for: "rd9",
-                        identity: "rd9",
-                        questions: " Is there a free trial for BookTime?",
-                        text: "Yes! You can try BookTime for free to see how it fits your needs.",
-                    },
-                    {
-                        for: "rd10",
-                        identity: "rd10",
-                        questions: "How do I get started with BookTime in my workplace?",
-                        text: "Easy peasy! Sign up, follow our simple onboarding, and start using BookTime to manage visitors hassle-free.",
-                    },
-    
                 ]
             }
         },

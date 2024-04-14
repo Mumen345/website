@@ -29,13 +29,12 @@
 </template>
 
 <script>
-import axios from "axios";
 export default {
     name: "LetsTalk",
     data() {
         return {
             request: {
-                fullName: "",
+                fullName: "",   
                 message: "",
                 email: "",
 
@@ -43,93 +42,8 @@ export default {
         }
     },
     methods: {
-        validateEmail(email) {
-            const re =
-                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))*$/;
-            return re.test(email);
-        },
-        async submit() {    
-            this.$emit('submit', this.request)
-            if (this.request.fullName === "") {
-                alert("Please tell us your name");
-                return false;
-            }
-        },
-        // submit() {
-        //     if (this.request.fullName === "") {
-        //         this.$toasted.error("Please tell us your name", {
-        //             position: "top-right",
-        //             duration: 5000
-        //         });
-        //         return false;
-        //     }
-        //     if (this.request.message === "") {
-        //         this.$toasted.error("Please type your message", {
-        //             position: "top-right",
-        //             duration: 5000
-        //         });
-        //         return false;
-        //     }
-        //     if (this.request.email === "") {
-        //         this.$toasted.error("Please fill your email", {
-        //             position: "top-right",
-        //             duration: 5000
-        //         });
-        //         return false;
-        //     }
-        //     if (this.request.email === "") {
-        //         this.$toasted.error("Please fill your email", {
-        //             position: "top-right",
-        //             duration: 5000
-        //         });
-        //         return false;
-        //     }
-        //     if (!this.validateEmail(this.request.email)) {
-        //         this.$toasted.error("Invalid email address", {
-        //             position: "top-right",
-        //             duration: 5000
-        //         });
-        //         return false;
-        //     }
-        //     // const params = "email=" + this.request;
-        //     // console.log(params);
-        //     // axios
-        //     //     // .post("https://jsonplaceholder.typicode.com/" + params)
-        //     //     .post("https://jsonplaceholder.typicode.com/", this.request)
-
-        //     //     .then((response) => {
-        //     //         // console.log(response.status);
-        //     //         if (response.status === 200 && response.data.status === "ok") {
-        //     //             this.$toasted.success("Success! Thank you for your Response", {
-        //     //                 position: "top-right",
-        //     //                 duration: 5000
-        //     //             });
-        //     //             this.email = "";
-        //     //         } else {
-        //     //             this.$toasted.error("oops an error occurred", {
-        //     //                 position: "top-right",
-        //     //                 duration: 5000
-        //     //             });
-        //     //             return false;
-        //     //         }
-        //     //     })
-        //     //     .catch((error) => {
-        //     //         console.log(error);
-        //     //         this.$toasted.error("Try rest, we don't have a backend yet", {
-        //     //             position: "top-right",
-        //     //             duration: 5000
-        //     //         });
-        //     //     });
-        // },
-    },
-    updated: function () {
-        axios.post('http://localhost:81/lnt/public/member/car_result', {
-                data: this.$data
-            })
-            .then(function (response) {
-                //do something
-            });
     }
+       
 
 }
 </script>

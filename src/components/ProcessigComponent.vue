@@ -15,52 +15,40 @@
     </div>
 </div>
 </template>
-
+az
 <script>
 export default {
     data() {
         return {
             contents: [{
 
+                    header: "Dashboards",
+                    description: "Carpooling activities such as total rides, top drivers, total KM covered and total CO2 saved can be viewed on the private network’s dashboard.",
+                },
+                {
+                    header: "Accrue and Redeem Points",
+                    description: " When offering rides in the private network, car owners can build up points which can be instantly turned to cash in your wallet.",
+                },
+                {
                     header: "Payment Integration",
-                    description: "Integrated payment options within the app to facilitate funding of wallets to complete trips, or pay for private network subscription.",
+                    description: " Integrated payment options within the app to facilitate funding of wallets or direct payment with debit cards for private network subscription.",
                 },
                 {
                     header: "Carpool Matching Algorithm",
                     description: " Intelligent matching algorithm that pairs riders with compatible car owners based on factors such as location, schedule, and network choice.",
                 },
+
                 {
                     header: "Ride Scheduling",
                     description: "Schedule rides in advance by specifying the date, time, and desired route. Increase your chance of finding a match.",
                 },
                 {
                     header: "Notifications",
-                    description: "Receive notifications regarding ride requests, confirmations, updates, and reminders. This ensures timely communication throughout the carpooling process.",
-                },
-
-                {
-                    header: "Referral Program",
-                    description: " Refer and earn for every friend that joins Greach through your code.",
-                },
-                {
-                    header: "High-Fidelity Verification",
-                    description: " Verify your phone number, government ID, car details and employment to carpool with other working professionals.",
-                },
-                {
-                    header: "Dashboards",
-                    description: " Carpooling activities such as total rides, top drivers, total KM covered and total CO2 saved can be viewed on the private network’s dashboard.",
-                },
-                {
-                    header: "Accrue and Redeem Points",
-                    description: " When offering rides in the private network, car owners can build up points which can be instantly turned to cash in your wallet",
+                    description: "  Receive notifications regarding ride requests, confirmations, updates, and reminders. This ensures timely communication throughout the carpooling process.",
                 },
                 {
                     header: "Payout for Car owners",
-                    description: "Car owners can withdraw money made on trips from their wallets to their bank account.",
-                },
-                {
-                    header: "Rating and Reviews",
-                    description: "Rate your carpooling experience. This helps in maintaining accountability and ensuring high-quality rides for all users.",
+                    description: " Car owners can withdraw money made on trips from their wallets to their bank account.",
                 },
 
             ]
