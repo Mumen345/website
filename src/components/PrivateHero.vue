@@ -1,8 +1,8 @@
 <template>
 <div class="private_container">
     <div class="private_left">
-        <h1>A Catchy Header for Greach Private here</h1>
-        <p>Unlock your business's growth potential with a marketing agency's expertise.</p>
+        <h1>Greach for Groups and Businesses</h1>
+        <p>(Your members need company on their way to your company)</p>
         <div class="button_div">
             <a class="download_btn" href="https://apps.apple.com/app/greach/id6444231549">
                 <img src="../assets/images/App_Store.svg" alt="">

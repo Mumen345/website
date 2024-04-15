@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="left_div">
-        <img src="../assets/images/private_mockup.svg" alt="">
+        <img src="../assets/images/private_mockup2.svg" alt="">
         <div class="button_div">
             <a href="https://apps.apple.com/app/greach/id6444231549">
                 <img src="../assets/images/App_Store.svg" alt="">

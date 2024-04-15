@@ -1,16 +1,16 @@
 <template>
     <div>
-      <PrivateHero />
+      <PublicviewHero />
       <PublicsecondScreen />
     </div>
   </template>
   
   <script>
-  import PrivateHero from '@/components/PrivateHero.vue';
+  import PublicviewHero from '@/components/PublicviewHero.vue';
   import PublicsecondScreen from '@/components/PublicsecondScreen.vue';
   export default {
       components: {
-          PrivateHero,
+        PublicviewHero,
           PublicsecondScreen,
       },
   }
