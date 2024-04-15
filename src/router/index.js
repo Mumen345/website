@@ -4,6 +4,7 @@ import NotFound from '../views/NotFound.vue'
 import FaqView from '../views/FaqView.vue'
 import PrivateView from '../views/PrivateView.vue'
 import PublicView from '../views/PublicView.vue'
+import ForgotPassword from '../views/ForgotPassword.vue'
 const routes = [
   {
     path: '/',
@@ -32,6 +33,11 @@ const routes = [
     path: '/public',
     name: 'public',
     component: PublicView
+  },
+  {
+    path: '/forgotpassword',
+    name: 'forgotpassword',
+    component: ForgotPassword
   },
   {
     path: '/contact',
