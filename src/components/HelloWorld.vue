@@ -40,27 +40,31 @@
             </div>
             <div class="modal-body">
                 <div class="form_container">
-                    <form @submit.prevent="submit">
+                    <form  @submit.prevent="handleSubmit" >
 
                         <div class=" mt-3 mb-4 custom">
-                            <div class="col">
+                            <div class="">
                                 <div data-mdb-input-init class="input_div">
                                     <input v-model="request.fullName" type="text" id="name" placeholder="FullName" class="" />
                                 </div>
+                                <small class="text-danger" v-if="nameError">{{ nameError }}</small>
                             </div>
                             <br>
-                            <div class="col">
+                            <div class="">
                                 <div data-mdb-input-init class="input_div">
                                     <input v-model="request.email" type="email" id="email" placeholder="Your email address" class="" />
                                 </div>
+                                <small class="text-danger" v-if="emailError">{{ emailError }}</small>
+                                <small class="text-danger" v-if="invalidEmail">{{ invalidEmail }}</small>
                             </div>
                             <br>
                             <div data-mdb-input-init class="input_div mb-4">
                                 <label class="form-label" for="form4Example3">Message</label>
                                 <textarea v-model="request.message" class="" id="form4Example3" rows="4"></textarea>
+                                <small class="text-danger" v-if="messageError">{{ messageError }}</small>
                             </div>
                         </div>
-                        <button type="submit" class="button mb-4">Send Message</button>
+                        <button  class="button mb-4">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -78,8 +82,12 @@ export default {
             request: {
                 fullName: "",
                 email: "",
-                message: "I need to inquire about how [Your Product/Service Name] can elevate my [industry/business]. Ready to witness firsthand the possibilities? Let's set up a personalized demo session to explore the tailored solutions we offer for your specific needs.",
-            }
+                message: "I need to inquire about how Greach Private can solve the commuting challenge of the employees/members of [company name] in [Location]. We have a staff/member strength of about [x number].",
+            },
+            nameError:"",
+            emailError:"",
+            invalidEmail:"",
+            messageError:"",
         }
     },
     methods: {
@@ -89,6 +97,18 @@ export default {
 
         off() {
             document.getElementById("myModal").style.display = "none";
+        },
+        validateEmail(email) {
+            const re =
+                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))*$/;
+            return re.test(email);
+        },
+        handleSubmit(){
+            console.log("Form submitted")
+            this.nameError = this.request.fullName.length > 2 ? "" : "Name cannot be empty"
+            // this.emailError = this.request.email.length > 0 ? "" : "Email cannot be empty"
+            this.messageError = this.request.message.length > 0 ? "" : "Message cannot be empty"
+            this.invalidEmail = this.validateEmail(this.request.email) ? "" : "Invalid Email"
         }
     },
 
@@ -132,6 +152,7 @@ input {
     padding: 10px;
     background: #F5F5F5;
     border-radius: 4px;
+width: 100%;
 }
 
 textarea {
@@ -140,12 +161,16 @@ textarea {
     background: #F5F5F5;
     border-radius: 4px;
     padding: 10px;
+    width: 100%;
 }
 
 .input_div {
     display: flex;
     flex-direction: column;
     outline: #EAECEF !important;
+    justify-content: start;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .button1 {

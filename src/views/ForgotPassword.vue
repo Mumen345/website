@@ -8,12 +8,12 @@
                         Once you have changed your password, login into the mobile app with your new password</small>
                 </div>
                 <div class="form_group">
-                    <input v-model="password" :type="type" class="form-control" placeholder="Your new password">
-                    <input v-model="confirmPassword" :type="type" class="form-control" placeholder="Confirm new password">
+                    <input v-model="password" :type="type" class="form-control" placeholder="Your new password" required>
+                    <input v-model="confirmPassword" :type="type" class="form-control" placeholder="Confirm new password" required>
                     <button @click.prevent='showPassword' class="see_button">{{btnText}}</button>
                     <br>
                     <div class="btn_container">
-                        <button @click.prevent=""  class="greach_button" >Reset</button>
+                        <button @click.prevent="submitForm"  class="greach_button" >Reset</button>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
     </div>
 </template>
 <script>
-// import axios from "axios";
+import axios from "axios";
 export default {
     name: "ForgotPassword",
     data() {
@@ -35,19 +35,19 @@ export default {
     methods: {
         submitForm() {
             if (this.password == "") {
-                this.$toasted.error("Fill the password please");
+                alert("password cannot be empty")
                 return false;
             }
             if (this.password.length < 8) {
-                this.$toasted.error("Password should be at least 8 characters");
+                alert("Password should be at least 8 characters");
                 return false;
             }
             if (this.confirmPassword == "") {
-                this.$toasted.error("Please input your Confirm password");
+                alert("Please input your Confirm password");
                 return false;
             }
             if (this.password != this.confirmPassword) {
-                this.$toasted.error("Password doesn't match");
+                alert("Password doesn't match");
                 return false;
             }
 
@@ -56,7 +56,7 @@ export default {
             var token = url.searchParams.get("token");
 
             if (!token) {
-                this.$toasted.error("Use the reset password link sent to your email");
+                alert("Use the reset password link sent to your email");
                 return false;
             }
             const requestBody = {
@@ -75,10 +75,10 @@ export default {
             })
             .catch((error) => {
             if (error.response.status === 400 || error.response.status === 404) {
-                this.$toasted.error(error.response.data.detail);
+                alert(error.response.data.detail);
                 window.history.pushState({}, document.title, "/changepassword");
             } else {
-                this.$toasted.error("An error occured. Please make sure you are using the link sent to your email.");
+                alert("An error occured. Please make sure you are using the link sent to your email.");
                 window.history.pushState({}, document.title, "/changepassword");
             }
             });
